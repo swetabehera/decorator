@@ -1,4 +1,4 @@
-# Let's define a speed_test decorator
+
 from functools import wraps
 from time import time
 
@@ -15,11 +15,11 @@ def speed_test(fn):
 
 @speed_test
 def sum_nums_gen():
-	return sum(x for x in range(90000000))
+	return sum(a for x in range(900))
 
 @speed_test
 def sum_nums_list():
-	return sum([x for x in range(90000000)])
+	return sum([b for x in range(900)])
 
 
 print(sum_nums_gen())
